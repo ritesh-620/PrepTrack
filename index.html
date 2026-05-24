@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Placement Tracker</title>
+  <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main">
+      <div class="logo">
+          <a id="btn-name">Personal Dashboard </a>
+      </div>
+      <nav class="nav-container">
+        <a href="#DailyGoals" class="btn">Daily Goals</a>
+        <a href="#Tasks" class="btn">Tasks</a>
+        <div class="dropdown">
+            <a href="#projects" class="btn dropdown-btn">Projects ▾</a>
+            <div class="dropdown-content">
+                <a href="https://ritesh-620.github.io/personalportfolio/" target="_blank">My Portfolio Website</a>
+                <a href="#home">Personal Dashboard</a>
+            </div>
+        </div>
+        <a href="#Progress" class="btn">Progress</a>
+    </nav>
+  </header>
+  
+  <section id="home" class="main-container">
+    <div class="LEFT">
+        <h1 class="intro">
+            <span class="intro1">Welcome,</span>
+            <span class="intro2">Back</span>
+            <span class="intro3">User</span>
+        </h1>
+        <h2 class="text1">
+            <span>Track Your Daily Progress</span>
+        </h2>
+    </div>
+
+    <div class="RIGHT">
+      <div class="Upcoming-Tasks">
+        <h3>Upcoming Tasks</h3>
+        <div class="task-list">
+          <li>Morning Exercise</li>
+          <li>Team Check-in</li>
+          <li>Project Meeting</li>
+          <li>Code Review</li>
+          <li>Reading Session</li>
+        </div>  
+      </div>
+    </div>
+  </section>
+
+  <section class="metrics-container">
+    <div class="metric-card">
+        <div class="metric-title">Daily Goals</div>
+        <div class="metric-value">8 / 10</div>
+    </div>
+
+    <div class="metric-card">
+        <div class="metric-title">Focus Time</div>
+        <div class="metric-value">4h 32m</div>
+    </div>
+
+    <div class="metric-card">
+        <div class="metric-title">Focus Mood</div>
+        <div class="metric-value">82%</div>
+    </div>
+      
+  </section>
+  <div class="card activity-card">
+    <h3>Recent Activity</h3>
+    <table class="activity-table">
+        <thead>
+            <tr>
+                <th>Activity</th>
+                <th>Time</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="activityTableBody">
+             <tr>
+                <td>Meditation Session</td>
+                <td>08:00 AM</td>
+                <td>✓ Completed</td>
+            </tr>
+            <tr>
+                <td>Project Review</td>
+                <td>10:30 AM</td>
+                <td>Active</td>
+            </tr>
+            <tr>
+                <td>Workout Tracking</td>
+                <td>01:00 PM</td>
+                <td>Pending</td>
+            </tr>
+            <tr>
+                <td>Reading Habit</td>
+                <td>04:00 PM</td>
+                <td>✓ Completed</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

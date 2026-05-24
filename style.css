@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0F172A;
+    color: whitesmoke;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    padding-bottom: 60px;
+}
+
+
+.main {
+    background-color: skyblue;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.logo {
+    color: #0F172A;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #0F172A;
+}
+
+.nav-container {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0F172A; 
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgba(15, 23, 42, 0.15);
+    color: #000000;
+}
+
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr; 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px 40px 40px;
+    align-items: center;
+    gap: 40px;
+}
+
+.intro {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.intro1, .intro3 {
+    color: #33C3F0;
+}
+
+.text1 {
+    font-size: 20px;
+    color: #94A3B8;
+    font-weight: 400;
+}
+
+.RIGHT {
+    width: 100%;
+}
+
+.Upcoming-Tasks {
+    background-color: #1E293B; 
+    color: whitesmoke;
+    border: 2px solid turquoise;
+    border-radius: 8px;
+    padding: 24px;
+    width: 100%;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.Upcoming-Tasks h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #33C3F0;
+    border-bottom: 1px solid rgba(51, 195, 240, 0.2);
+    padding-bottom: 8px;
+}
+
+.task-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-list li {
+    font-size: 16px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.task-list li::before {
+    content: "•";
+    color: turquoise;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+
+.metrics-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+.metric-card {
+    background-color: #1E293B; /* Standard subtle card panel background styling */
+    color: whitesmoke;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-2px);
+}
+
+.metric-title {
+    font-size: 0.9rem;
+    color: #94A3B8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.metric-value {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #33C3F0;
+}
+
+
+.activity-card {
+    max-width: 1120px;
+    margin: 40px auto 0 auto;
+    background-color: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.activity-card h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #33C3F0;
+}
+
+.activity-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.activity-table th {
+    font-size: 0.85rem;
+    color: #94A3B8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #334155;
+}
+
+.activity-table td {
+    padding: 14px 0;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #334155;
+    color: #E2E8F0;
+}
+
+.activity-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1E293B; 
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    border: 1px solid #334155;
+    border-radius: 6px;
+    z-index: 100;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    color: #E2E8F0;
+    padding: 12px 16px;
+    text-dash-style: none;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown-content a:hover {
+    background-color: #334155;
+    color: #33C3F0; 
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-btn {
+    background-color: rgba(15, 23, 42, 0.1);
+}
