@@ -11,8 +11,6 @@ body {
     line-height: 1.6;
     padding-bottom: 60px;
 }
-
-
 .main {
     background-color: skyblue;
     height: 80px;
@@ -21,7 +19,6 @@ body {
     align-items: center;
     padding: 0 40px;
 }
-
 .logo {
     color: #0F172A;
     font-size: 26px;
@@ -248,4 +245,50 @@ body {
 
 .dropdown:hover .dropdown-btn {
     background-color: rgba(15, 23, 42, 0.1);
+}
+
+.Coding-Progress{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 10%;
+}
+.Java,.Html,.Css,.javascript,.springboot{
+    height: 200px;
+    width: 200px;
+    background-color: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Sem-subject-Progress{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 10%;
+}
+.subject1,.subject2,.subject3,.subject4,.subject5{
+    height: 200px;
+    width: 200px;
+    background-color: #1E293B;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Progress-bar{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #334155;
+    color: #33C3F0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
 }
