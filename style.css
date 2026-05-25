@@ -9,7 +9,7 @@ body {
     color: whitesmoke;
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    padding-bottom: 60px;
+   
 }
 .main {
     background-color: skyblue;
@@ -340,6 +340,21 @@ input[type="checkbox"]:checked + label{
     .Tasks, .Coding-Progress, .Sem-subject-Progress {
         padding: 20px 5%;
     }
+}
+
+.footer-section{
+    background-color: #00000099;
+    padding: 48px 16px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.foot-sec1 h1{
+    color: #33C3F0;
+}
+.foot-sec2 a{
+  gap: 10px;
 }
 
 .sidebar{
