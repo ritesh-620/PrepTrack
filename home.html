@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Placement Tracker</title>
-  <link rel ="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -49,13 +49,13 @@
         <div class="RIGHT">
         <div class="Upcoming-Tasks">
             <h3>Upcoming Tasks</h3>
-            <div class="task-list">
-            <li>Morning Exercise</li>
-            <li>Team Check-in</li>
-            <li>Project Meeting</li>
-            <li>Code Review</li>
-            <li>Reading Session</li>
-            </div>  
+            <ul class="task-list">
+                <li>Morning Exercise</li>
+                <li>Team Check-in</li>
+                <li>Project Meeting</li>
+                <li>Code Review</li>
+                <li>Reading Session</li>
+            </ul>  
         </div>
         </div>
    </section>
@@ -79,37 +79,39 @@
   </section>
   <div class="card activity-card">
     <h3>Recent Activity</h3>
-    <table class="activity-table">
-        <thead>
-            <tr>
-                <th>Activity</th>
-                <th>Time</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody id="activityTableBody">
-             <tr>
-                <td>Meditation Session</td>
-                <td>08:00 AM</td>
-                <td>✓ Completed</td>
-            </tr>
-            <tr>
-                <td>Project Review</td>
-                <td>10:30 AM</td>
-                <td>Active</td>
-            </tr>
-            <tr>
-                <td>Workout Tracking</td>
-                <td>01:00 PM</td>
-                <td>Pending</td>
-            </tr>
-            <tr>
-                <td>Reading Habit</td>
-                <td>04:00 PM</td>
-                <td>✓ Completed</td>
-            </tr>
-        </tbody>
-    </table>
+    <div style="overflow-x: auto;">
+        <table class="activity-table">
+            <thead>
+                <tr>
+                    <th>Activity</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="activityTableBody">
+                 <tr>
+                    <td>Meditation Session</td>
+                    <td>08:00 AM</td>
+                    <td>✓ Completed</td>
+                </tr>
+                <tr>
+                    <td>Project Review</td>
+                    <td>10:30 AM</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Workout Tracking</td>
+                    <td>01:00 PM</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>Reading Habit</td>
+                    <td>04:00 PM</td>
+                    <td>✓ Completed</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     </div>
     <div class="Tasks" id="Tasks">
         <div class="dsa" id="dsa">
@@ -124,64 +126,57 @@
             <h2>APTITUDE</h2>
             <p>To cover one topic</p>
             <div class="task">
-                <input type="checkbox" id="check1">
-                <label for="check1">Completed</label>
+                <input type="checkbox" id="check2">
+                <label for="check2">Completed</label>
             </div>
         </div>
         <div class="web-d" id="web-d">
             <h2>WEB-D</h2>
             <p>To cover new topic</p>
             <div class="task">
-                <input type="checkbox" id="check1">
-                <label for="check1">Completed</label>
+                <input type="checkbox" id="check3">
+                <label for="check3">Completed</label>
             </div>
         </div>
         <div class="revision" id="revision">
             <h2>REVISION</h2>
             <p>Revise the previous topic</p>
             <div class="task">
-                <input type="checkbox" id="check1">
-                <label for="check1">Completed</label>
+                <input type="checkbox" id="check4">
+                <label for="check4">Completed</label>
             </div>
         </div>
     </div>
-    <div  class="Progress" id="Progress">
+    <div class="Progress" id="Progress">
 
         <div class="Coding-Progress">
-           
            <div class="Java">
                 <i class="fa-brands fa-java"></i>
                 <p>JAVA</p>
                 <div class="Progress-bar">70%</div>
-                
             </div>
             <div class="Html">
                 <i class="fa-brands fa-html5"></i>
                 <p>HTML</p>
                 <div class="Progress-bar">82%</div>
-                
             </div>
             <div class="Css">
                 <i class="fa-brands fa-css3"></i>
                  <p>CSS</p>
                 <div class="Progress-bar">82%</div>
-               
             </div>
             <div class="javascript">
                 <i class="fa-brands fa-js"></i>
                 <p>JavaScript</p>
                  <div class="Progress-bar">30%</div>
-                
             </div>
             <div class="springboot">
                 <i class="fa-solid fa-leaf"></i>
                 <p>SpringBoot</p>
                 <div class="Progress-bar">10%</div>
-                
             </div>
         </div>
         <div class="Sem-subject-Progress">
-            
             <div class="subject1">
                 <p>Compiler Design</p>
                 <div class="Progress-bar">30%</div>
