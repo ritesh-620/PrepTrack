@@ -12,3 +12,6 @@ function login() {
 function Guest() {
   window.location.href = "home.html";
 }
+function forgetPassword() {
+  alert("Please contact the administrator to reset your password.");
+}
